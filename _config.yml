@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Desh Raj
+title: Mohsen Moradi
 
 # Short description of your site
 description: Personal Website
@@ -42,11 +42,11 @@ avatar: "/static/img/desh_new.jpeg"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Desh Raj
-  email: "draj@cs.jhu.edu"
-  github: desh2608    # eg. daattali
-  linkedin: rdesh26
-  twitter: rdesh26
+  name: Mohsen Moradi
+  email: "m.moradi@northeastern.edu"
+  github: moradi-coding    # eg. daattali
+  linkedin: moradi-coding
+  # twitter: rdesh26
 
 # Select which links to show in the footer
 footer-links-active:
@@ -68,7 +68,7 @@ footer-links-active:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  # twitter: true
   facebook: false
   google: true
   linkedin: false
