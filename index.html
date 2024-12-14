@@ -62,6 +62,28 @@ use-site-title: true
 <b>Updates:</b><br><br>
 
 <ul style="height: 300px; overflow: auto">
+
+	<p><strong>December 2024: Solving a Fundamental Problem in Channel Coding</strong></p>
+<p>Our paper, <i>PAC Codes with Bounded-Complexity Sequential Decoding: Pareto Distribution and Code Design</i>, is now available on <a href="https://arxiv.org/abs/2412.XXXX" target="_blank">arXiv</a>. In this work, we address a key challenge in channel coding related to the computational complexity of sequential decoding.</p>
+<p>For convolutional codes, it is known that if the number of transmitted data symbols is less than N &times; R<sub>0</sub>, where R<sub>0</sub> is the channel cutoff rate, the decoding complexity remains constant. However, when the data size exceeds N &times; R<sub>0</sub>, the required computational effort grows exponentially.</p>
+<p>PAC codes, which combine polar and convolutional coding, experience this behavior in a more structured way. After the first step of channel polarization, half of the channels (N/2) are "bad" channels with a cutoff rate R<sub>0</sub><sup>-</sup>, and the other half are "good" channels with a cutoff rate R<sub>0</sub><sup>0</sup>.</p>
+<p>In an earlier paper, I proved that if the data size in each half of the rate profile exceeds N/2 &times; R<sub>0</sub><sup>-</sup> and N/2 &times; R<sub>0</sub><sup>0</sup>, the decoding complexity grows exponentially. In this current work, we have solved the inverse problem&mdash;showing that if the data size is below these thresholds, the decoding complexity remains constant.</p>
+<p>It is important to note the gap between the cutoff rate R<sub>0</sub> and the channel capacity I(W). For convolutional codes operating at rates between these values, decoding complexity is exponential. However, after one step of polarization, we observe that the average cutoff rate is higher than R<sub>0</sub> (i.e., (R<sub>0</sub><sup>-</sup> + R<sub>0</sub><sup>0</sup>) / 2 &ge; R<sub>0</sub>), while the average capacity remains unchanged (i.e., (I(W<sup>-</sup>) + I(W<sup>+</sup>)) / 2 = I(W)). This implies that after just one polarization step, it is possible to send data at rates closer to the channel capacity with constant decoding complexity.</p>
+<p>As we further polarize the channel, we can achieve transmission rates even closer to the channel capacity while maintaining constant decoding complexity. Our numerical results show that for small to medium block lengths, PAC codes offer error-correction performance close to theoretical bounds, with a decoding complexity that remains constant.</p>
+<p>The next question we aim to explore is how to optimally design PAC codes for list decoding of polar codes.</p>
+
+
+	<li><i>December 2024:</i> We solved a fundamental problem in channel coding in our paper, <i>PAC Codes with Bounded-Complexity Sequential Decoding: Pareto Distribution and Code Design</i>, available on <a href="https://arxiv.org/pdf/2412.06072" target="_blank">arXiv</a>.
+	In this work, we address a key challenge in channel coding related to the computational complexity of sequential decoding.
+	For convolutional codes, it is known that if the number of transmitted data symbols is less than N &times; R<sub>0</sub>, where R<sub>0</sub> is the channel cutoff rate, the decoding complexity remains constant. However, when the data size exceeds N &times; R<sub>0</sub>, the required computational effort grows exponentially.
+	PAC codes, which combine polar and convolutional coding, experience this behavior in a more structured way. After the first step of channel polarization, half of the channels (N/2) are "bad" channels with a cutoff rate R<sub>0</sub><sup>-</sup>, and the other half are "good" channels with a cutoff rate R<sub>0</sub><sup>0</sup>.
+	In an earlier paper, I proved that if the data size in each half of the rate profile exceeds N/2 &times; R<sub>0</sub><sup>-</sup> and N/2 &times; R<sub>0</sub><sup>0</sup>, the decoding complexity grows exponentially. In this current work, we have solved the inverse problem&mdash;showing that if the data size is below these thresholds, the decoding complexity remains constant.
+	It is important to note the gap between the cutoff rate R<sub>0</sub> and the channel capacity I(W). For convolutional codes operating at rates between these values, decoding complexity is exponential. However, after one step of polarization, we observe that the average cutoff rate is higher than R<sub>0</sub> (i.e., (R<sub>0</sub><sup>-</sup> + R<sub>0</sub><sup>0</sup>) / 2 &ge; R<sub>0</sub>), while the average capacity remains unchanged (i.e., (I(W<sup>-</sup>) + I(W<sup>+</sup>)) / 2 = I(W)). This implies that after just one polarization step, it is possible to send data at rates closer to the channel capacity with constant decoding complexity.
+	As we further polarize the channel, we can achieve transmission rates even closer to the channel capacity while maintaining constant decoding complexity. Our numerical results show that for small to medium block lengths, PAC codes offer error-correction performance close to theoretical bounds, with a decoding complexity that remains constant.
+	The next question we aim to explore is how to optimally design PAC codes for list decoding of polar codes.
+	</li><br>
+
+	
 	<li><i>August 2024:</i> Moradi, Mohsen, and Hessam Mahdavifar. "On Fast SC-based Polar Decoders: Metric Polarization and a Pruning Technique." arXiv preprint arXiv:2408.03840 (2024).
 	</li><br>
 
@@ -139,7 +161,8 @@ use-site-title: true
   <li>IEEE Communications Letters</li>
   <li>IEEE Wireless Communications Letters</li>
   <li>IEEE International Symposium on Information Theory (ISIT)</li>
-  <li>IEEE International Conference on Communications (ICC)</li>
+  <li>IEEE International Conference on Communications (ICC)</li>	
+  <li>IEEE Wireless Communications and Networking Conference (WCNC)</li>
   <li>IEEE Global Communications Conference</li>
   <li>International Symposium on Topics in Coding (ISTC)</li>
   <li>International Conference on Wireless Communications and Signal Processing</li>
